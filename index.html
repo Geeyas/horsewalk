@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> JAVA PRACTICE</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="javascript/java.js">
+			</script>
+</head>
+<body style="background-image: url('images/bgpic.jpg'); background-repeat: no-repeat; background-position: center; background-attachment: fixed;">
+
+
+
+<div class="loading"> 
+
+ WELCOME TO MY PAGE
+	</div>
+
+<div class="title">
+	<h1> <b>  WEB DESIGNER </b></h1>
+</div>
+
+<div class="navbar">
+<nav>
+	<ul>
+		<li><a href="#" title="HOME BUTTON" id="home" onclick="alert('click here to go to HOME PAGE')"> HOME </a></li>
+		<li><a href="#" title="GALLERY BUTTON" id="gallery" onclick="alert('click here to go to GALLERY PAGE')"> GALLERY</a></li>
+	</ul>
+</nav>
+</div>
+<main>
+	<div class="side">  side content </div>
+ 	<marquee> <div class="frst"> this is the first content </div> </marquee>
+	<marquee direction="right"> <div class="sec">  this is the second content  </div> </marquee>
+	<marquee> <div class="third"> this is the third content </div> </marquee>
+	<div class="date"> date come up here </div>
+
+</main>
+<br>
+<hr style="color: solid black;box-shadow: 0 0 10px black;">
+
+<br>
+<div class="horse">
+<marquee direction="right"> <img src="images/horse.gif" alt="horse" title="horse moving" id="horse"></marquee>
+</div>
+<br>
+<hr style="color: solid black;box-shadow: 0 0 10px black;">
+<br>
+<footer>
+	<marquee>
+		&copy copuright holder 2020
+	</marquee>
+</footer>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var txt;
+  var person = prompt("Please enter your name:",);
+  if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+  } else {
+    txt = "Hello " + person + "! How are you today?";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
